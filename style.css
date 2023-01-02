@@ -12,15 +12,56 @@ header{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
- nav ul {
+nav>ul {
     display: flex;
  }
- nav ul li {
+nav > ul >li{
     padding: 30px;
-    color: aliceblue;
     list-style: none;
+
+}
+
+nav > ul >li >a{
+    color: white;
     text-decoration: none;
-   
- }
+    font-size: 20px;
+    font-weight: bold;
+}
+.megamenu{
+    position: absolute;
+    top:120%;
+    left: 0px;
+    opacity: 0px;
+    visibility: hidden;
+    transition: 2s;
+
+    width:100%;
+    
+    box-shadow: 0px 10px 2px 3px lightblue;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.items-megamenu{
+    flex-basis: 30%;
+    margin: 1%;
+}
+
+nav > ul >li:hover .megamenu{
+    opacity: 1px;
+    top:100%;
+    visibility: visible;
+}
+
+.items-megamenu ul li{
+    list-style: none;
+    padding: 7px;
+
+}
+.items-megamenu h3{
+    padding:10px;
+    background: lightgrey;
+}
