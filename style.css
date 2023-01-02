@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 header{
     width:100%;
@@ -9,4 +10,17 @@ header{
 .container {
     width: 1170px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
+
+ nav ul {
+    display: flex;
+ }
+ nav ul li {
+    padding: 30px;
+    color: aliceblue;
+    list-style: none;
+    text-decoration: none;
+   
+ }
