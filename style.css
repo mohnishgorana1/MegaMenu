@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width:100%;
+    background: black;
+}
+.container {
+    width: 1170px;
+    margin: auto;
+}
